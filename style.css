@@ -1,0 +1,29 @@
+.display{
+display: flex;
+flex-direction: row;
+border: 1px solid black;
+width: 20%;
+justify-content: space-around;
+font-size: 40px;
+}
+.control-btn{
+display: flex;
+border: 1px solid black;
+width: 30%;
+justify-content: space-around;
+}
+.btns{
+padding: 15px 40px 15px 40px;
+font-size: 15px;
+border: none;
+outline: none;
+border-radius: 10px;
+background-color: rgb(6, 77, 105);
+color: white;
+cursor: pointer;
+}
+.btns:active{
+background-color: rgb(1, 132, 141);
+
+
+}
