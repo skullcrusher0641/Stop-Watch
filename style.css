@@ -1,14 +1,24 @@
+body{
+background-image: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+
+}
+
 .display{
 display: flex;
 flex-direction: row;
-border: 1px solid black;
-width: 20%;
+border: 10px solid rgb(165, 17, 17);
+width: 350px;
 justify-content: space-around;
 font-size: 40px;
+border-radius: 50%;
+height: 350px;
+align-items: center;
+color: rgb(255, 255, 255);
+
 }
 .control-btn{
 display: flex;
-border: 1px solid black;
+
 width: 30%;
 justify-content: space-around;
 }
@@ -25,5 +35,27 @@ cursor: pointer;
 .btns:active{
 background-color: rgb(1, 132, 141);
 
+}
+.main-box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 1000px;
+
 
 }
+.big-box{
+    display: flex;
+    flex-direction: column;
+
+width: 50%;
+height: 800px;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+
+

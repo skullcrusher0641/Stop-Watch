@@ -22,20 +22,30 @@ sec = 0
 
 }
 
-let stopElement = document.getElementById("stopBtn")
 let resetElement = document.getElementById("resetBtn")
 
 
 }
+let stopElement = document.getElementById("stopBtn")
+
+stopElement.style.display="none"
+
 function startTimer (){
 let startElement = document.getElementById("startBtn")
+let stopElement = document.getElementById("stopBtn")
 
     interval = setInterval(timer,10)
-    startElement.style.pointerEvents = "none"
+    startElement.style.display="none"
+stopElement.style.display="flex"
+
 }
 function stopTimer (){
 let startElement = document.getElementById("startBtn")
-   startElement.style.pointerEvents = "auto"
+let stopElement = document.getElementById("stopBtn")
+
+startElement.style.display="flex"
+stopElement.style.display="none"
+   
 clearInterval(interval)
 
 
@@ -44,7 +54,10 @@ clearInterval(interval)
 }
 function resetTimer(){
     let startElement = document.getElementById("startBtn")
-   startElement.style.pointerEvents = "auto"
+    startElement.style.display="flex"
+    let stopElement = document.getElementById("stopBtn")
+    stopElement.style.display="none"
+
 clearInterval(interval);
 msec = 0;
 sec =0
